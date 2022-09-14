@@ -4,7 +4,7 @@ include "main.h"
  * @ab: integer input
  * Return: absolute value of ab
  */
-int _abs(int ab)
+int _abs(int a)
 {
-	return (ab * ((ab > '0') - (ab < '0')));
+	return (ab * ((ab > 0) - (ab < 0)));
 }
