@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet_x10 - print a-z 10 times
+ * print_alphabet_x10 -print a-z 10 times
  *
  *
  * Return: 0
@@ -24,7 +24,7 @@ b++;
 
 }
 _putchar('\n');
-a++
+a++;
 
 }
 
