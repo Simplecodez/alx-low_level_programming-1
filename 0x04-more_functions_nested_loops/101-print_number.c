@@ -1,24 +1,30 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
-* print_number - Prints a number
-* @n: The number to print
+* main - prints all possible combinations of two two-digit numbers
+* Return: Always 0 (Success)
 */
 
-void print_number(int n)
+
+int main(void)
+{int first, second;
+for (first = 0; first < 100; first++)
 {
-	unsigned int num = n;
-
-	if (n < 0)
-	{
-		putchar('-');
-		num = -num;
-	}
-	if (num > 9)
-	{
-		print_number(num / 10);
-	}
-	putchar(num % 10 + '0');
+for (second = 0; second < 100; second++)
+{
+if (first < second)
+{putchar((first / 10) + 48);
+putchar((first % 10) + 48);
+putchar(' ');
+putchar((second / 10) + 48);
+putchar((second % 10) + 48);
+if (first != 98 || second != 99)
+{putchar(',');
+putchar(' ');
 }
-
+}
+}
+}
+putchar('\n');
+return (0);
+}
