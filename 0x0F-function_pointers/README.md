@@ -1,1 +1,0 @@
-God, take control.
